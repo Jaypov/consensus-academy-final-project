@@ -47,6 +47,12 @@ As the project is not being marked based on its UI and i had very limited time t
 
 install dependancies
 
+due to truffle dependancys this project must be run on node V12
+
+```javascript
+nvm use 12
+```
+
 ```javascript
 yarn install
 ```

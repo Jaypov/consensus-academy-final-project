@@ -1,0 +1,3 @@
+Deployed network: ropsten
+Contract Address: 0x42F82b93CFBF9654ef007F105920537e809d11B5
+Transaction: https://ropsten.etherscan.io/tx/0xbd538736022ce9d8f6800dca63ee6de2e32b73847238bcc74d5de068a755f27d

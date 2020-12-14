@@ -1,0 +1,73 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.3.0",
+    "@openzeppelin/test-helpers": "^0.5.9",
+    "@typechain/web3-v1": "^2.0.0",
+    "@types/bignumber.js": "^5.0.0",
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^10.12.2",
+    "chai-bn": "^0.2.1",
+    "ganache-cli": "^6.12.1",
+    "style-loader": "^2.0.0",
+    "truffle-typings": "^1.0.8",
+    "ts-generator": "^0.0.8",
+    "ts-loader": "^8.0.11",
+    "ts-node": "^9.1.0",
+    "typechain": "^4.0.1",
+    "typechain-target-truffle": "^1.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.0.17",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@web3-react/core": "^6.1.1",
+    "@web3-react/injected-connector": "^6.0.7",
+    "clsx": "^1.1.1",
+    "concurrently": "^5.3.0",
+    "ethereum-blockies-base64": "^1.0.2",
+    "next": "10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "truffle": "^5.1.54",
+    "web-vitals": "^0.2.4",
+    "web3": "^1.3.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "bootstrap": "concurrently \"npm run ganache\" \"yarn test\" \"npm run migrate\"",
+    "ganache": "ganache-cli --allowUnlimitedContractSize --quiet --networkId 1337 --host 0.0.0.0 --mnemonic \"tiger morning grape athlete seat brand seat army member payment ordinary fury\"",
+    "migrate": "rm -rf build && truffle migrate --reset --compile-all --network development",
+    "prepare": "yarn generate && yarn generate-web3-types",
+    "generate-web3-types": "typechain --target=web3-v1 './build/**/*.json'",
+    "generate": "truffle compile && typechain --target truffle './build/**/*.json'",
+    "test": "truffle test",
+    "tsc": "tsc --noEmit"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

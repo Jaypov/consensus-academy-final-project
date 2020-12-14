@@ -8,7 +8,7 @@ In the UK at all of our GP surgerys we have two companies that implement our EHR
 
 Aswell as the data being hard to obtain for patints, it is also hard for researchers to obtain and get express perssion to use this data because of bureaucracy.
 
-Our government also monetize our health data by selling it to drug compaines (researchers) without knowlage or concent. The most recent example being, giving over millions of medical records to american drug companies, again without knowlage or concent from the people who genrate that data (all of us).
+Our government also monetize our health data by selling it to drug compaines (researchers) without knowlage or concent (concent is applied when you sign up to a GP, however patients are not told this and not told how they can opt out). The most recent example being, giving over millions of medical records to american drug companies, again without knowlage or concent from the people who genrate that data (all of us).
 
 I belive in giving patients the power over their healthcare and their data. This POC project aims to create a marketplace where researchers can submit research projects to a marketplace and allow patients to sign up to these projects. In return they receive payment of the use of their data. This would potentilly drive more much needed data into research projects as patients have an incetive to share it.
 

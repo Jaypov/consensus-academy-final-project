@@ -48,7 +48,7 @@ As the project is not being marked based on its UI and i had very limited time t
 install dependancies
 
 ```javascript
-yarn isntall
+yarn install
 ```
 
 boot up blockchain, run tests and migrate contracts
@@ -57,7 +57,7 @@ boot up blockchain, run tests and migrate contracts
 yarn bootstrap
 ```
 
-boot up UI (wait for previous step to full complete, ABI's must be generated, contracts deployed and tests passed, tests are verbose you will see when they pass)
+in a new terminal window, boot up the UI (wait for previous step to full complete, ABI's must be generated, contracts deployed and tests passed, tests are verbose you will see when they pass)
 
 ```javascript
 yarn dev
@@ -68,3 +68,7 @@ visit the followingn url in the borwser
 ```javascript
 localhost: 3000;
 ```
+
+## Usage
+
+When the UI is booted up go to the terminal ganache is running in and import the top 3 private keys into metamask (the first account is the owner of the merkatplace contract. The market place contract is what powers the "admin" page)
